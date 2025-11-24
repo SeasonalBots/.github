@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 🎧 Support Server
+    url: https://discord.com/invite/4bxtftVuzn
+    about: For general support or quick help, join our Discord.
+
+  - name: 📚 Documentation
+    url: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/docs
+    about: Check the documentation before opening an issue.
