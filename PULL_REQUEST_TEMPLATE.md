@@ -1,43 +1,14 @@
-## ✨ Pull Request Summary
-<!-- Briefly describe what this PR does -->
+## Summary
+Describe the changes in this PR.
 
----
+## Changes
+- [ ] New feature
+- [ ] Bug fix
+- [ ] Refactor
+- [ ] Performance improvement
 
-## 🔍 What Changed
-<!-- Auto-filled from commit messages -->
+## Details
+Explain what this PR does.
 
-- _Generated automatically_
-
----
-
-## 🧠 Why This Is Needed
-<!-- Why is this change required? Bug fix, feature, refactor, infra, etc. -->
-
----
-
-## 🧪 Testing
-- [ ] Unit tests
-- [ ] Manual testing
-- [ ] Not tested (explain why)
-
----
-
-## ⚠️ Breaking Changes
-- [ ] Yes
-- [ ] No
-
-<!-- If yes, describe the breaking changes -->
-
----
-
-## 📁 Key Files / Areas Affected
-<!-- Optional -->
-- 
-
----
-
-## ✔ Checklist
-- [ ] I have tested this change
-- [ ] I have updated documentation (if required)
-- [ ] I have followed organisation coding standards
-- [ ] Commits follow the commit convention
+## Testing
+Describe how this was tested.
