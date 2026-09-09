@@ -1,0 +1,659 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="420"
+  viewBox="0 0 1200 420"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">SeasonalBots</title>
+  <desc id="desc">
+    SeasonalBots organisation banner — creating seasonal Discord experiences all year round.
+  </desc>
+
+  <defs>
+    <!-- Background -->
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080b12" />
+      <stop offset="48%" stop-color="#0d0b17" />
+      <stop offset="100%" stop-color="#090c14" />
+    </linearGradient>
+
+    <!-- Seasonal brand gradient -->
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="42%" stop-color="#7c3aed" />
+      <stop offset="72%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+
+    <linearGradient id="brandSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+
+    <linearGradient id="pumpkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <radialGradient id="purpleGlow">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity=".30" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orangeGlow">
+      <stop offset="0%" stop-color="#f97316" stop-opacity=".20" />
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glass panel -->
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151927" stop-opacity=".92" />
+      <stop offset="100%" stop-color="#0d101a" stop-opacity=".88" />
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+
+    <!-- Clip -->
+    <clipPath id="rounded">
+      <rect width="1200" height="420" rx="28" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <!-- =========================================================
+         BACKGROUND
+         ========================================================= -->
+
+    <rect width="1200" height="420" fill="url(#background)" />
+
+    <circle
+      cx="195"
+      cy="80"
+      r="230"
+      fill="url(#purpleGlow)"
+    />
+
+    <circle
+      cx="810"
+      cy="40"
+      r="250"
+      fill="url(#orangeGlow)"
+    />
+
+    <circle
+      cx="1080"
+      cy="50"
+      r="210"
+      fill="url(#purpleGlow)"
+    />
+
+    <!-- Decorative stars -->
+    <g fill="#c084fc" opacity=".25">
+      <circle cx="930" cy="55" r="2" />
+      <circle cx="970" cy="88" r="1.5" />
+      <circle cx="1010" cy="40" r="2" />
+      <circle cx="1060" cy="95" r="1.5" />
+      <circle cx="1115" cy="58" r="2" />
+      <circle cx="870" cy="100" r="1.5" />
+    </g>
+
+    <!-- =========================================================
+         LOGO
+         ========================================================= -->
+
+    <g transform="translate(55 48)">
+      <!-- Outer glow -->
+      <circle
+        cx="55"
+        cy="55"
+        r="49"
+        fill="none"
+        stroke="#8b5cf6"
+        stroke-width="8"
+        opacity=".28"
+        filter="url(#glow)"
+      />
+
+      <!-- Ring -->
+      <circle
+        cx="55"
+        cy="55"
+        r="45"
+        fill="#0b0e16"
+        stroke="url(#brand)"
+        stroke-width="5"
+      />
+
+      <!-- Bot antenna -->
+      <line
+        x1="55"
+        y1="15"
+        x2="55"
+        y2="27"
+        stroke="#d8b4fe"
+        stroke-width="4"
+        stroke-linecap="round"
+      />
+
+      <circle
+        cx="55"
+        cy="11"
+        r="6"
+        fill="#111827"
+        stroke="#d8b4fe"
+        stroke-width="3"
+      />
+
+      <!-- Bot head -->
+      <rect
+        x="35"
+        y="25"
+        width="40"
+        height="25"
+        rx="9"
+        fill="#272333"
+        stroke="#a78bfa"
+        stroke-width="2"
+      />
+
+      <!-- Eyes -->
+      <circle cx="47" cy="37" r="3" fill="#ffffff" />
+      <circle cx="63" cy="37" r="3" fill="#ffffff" />
+
+      <!-- Pumpkin -->
+      <ellipse
+        cx="55"
+        cy="65"
+        rx="30"
+        ry="27"
+        fill="url(#pumpkin)"
+      />
+
+      <!-- Pumpkin ridges -->
+      <path
+        d="M45 40 C37 53 37 77 45 90"
+        fill="none"
+        stroke="#c2410c"
+        stroke-width="2"
+        opacity=".55"
+      />
+
+      <path
+        d="M65 40 C73 53 73 77 65 90"
+        fill="none"
+        stroke="#c2410c"
+        stroke-width="2"
+        opacity=".55"
+      />
+
+      <!-- Pumpkin face -->
+      <path
+        d="M38 59 L48 54 L47 65 Z"
+        fill="#111827"
+      />
+
+      <path
+        d="M72 59 L62 54 L63 65 Z"
+        fill="#111827"
+      />
+
+      <path
+        d="M40 73
+           Q55 86 70 73
+           L66 82
+           L60 78
+           L55 84
+           L50 78
+           L44 82 Z"
+        fill="#111827"
+      />
+    </g>
+
+    <!-- =========================================================
+         BRAND
+         ========================================================= -->
+
+    <text
+      x="180"
+      y="82"
+      fill="#f8fafc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="52"
+      font-weight="800"
+      letter-spacing="-2"
+    >
+      Seasonal<tspan fill="url(#brand)">Bots</tspan>
+    </text>
+
+    <text
+      x="183"
+      y="113"
+      fill="#94a3b8"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="14"
+      font-weight="600"
+      letter-spacing="3"
+    >
+      SEASONAL EXPERIENCES • ALL YEAR ROUND
+    </text>
+
+    <!-- Seasonal tags -->
+    <g
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      <text x="183" y="151" fill="#fb923c">
+        🍂 AUTUMN
+      </text>
+
+      <text x="290" y="151" fill="#60a5fa">
+        ❄ WINTER
+      </text>
+
+      <text x="390" y="151" fill="#f472b6">
+        ♥ VALENTINE'S
+      </text>
+
+      <text x="525" y="151" fill="#86efac">
+        ✤ SPRING
+      </text>
+
+      <text x="625" y="151" fill="#facc15">
+        ☀ SUMMER
+      </text>
+    </g>
+
+    <!-- Right hand branding -->
+    <g transform="translate(885 45)">
+      <text
+        x="0"
+        y="24"
+        fill="#a855f7"
+        font-family="Georgia,serif"
+        font-size="27"
+        font-style="italic"
+        font-weight="700"
+      >
+        More Than
+      </text>
+
+      <text
+        x="12"
+        y="55"
+        fill="#c084fc"
+        font-family="Georgia,serif"
+        font-size="27"
+        font-style="italic"
+        font-weight="700"
+      >
+        Just Bots.
+      </text>
+
+      <line
+        x1="0"
+        y1="72"
+        x2="145"
+        y2="72"
+        stroke="url(#brand)"
+        stroke-width="2"
+      />
+
+      <text
+        x="170"
+        y="17"
+        fill="#64748b"
+        font-family="Inter,Segoe UI,Arial,sans-serif"
+        font-size="11"
+        letter-spacing="2"
+      >
+        COMMUNITY
+      </text>
+
+      <text
+        x="170"
+        y="39"
+        fill="#64748b"
+        font-family="Inter,Segoe UI,Arial,sans-serif"
+        font-size="11"
+        letter-spacing="2"
+      >
+        CREATIVITY
+      </text>
+
+      <text
+        x="170"
+        y="61"
+        fill="#64748b"
+        font-family="Inter,Segoe UI,Arial,sans-serif"
+        font-size="11"
+        letter-spacing="2"
+      >
+        AUTOMATION
+      </text>
+    </g>
+
+    <!-- =========================================================
+         CARDS
+         ========================================================= -->
+
+    <rect
+      x="45"
+      y="195"
+      width="350"
+      height="160"
+      rx="16"
+      fill="url(#panel)"
+      stroke="#272b3a"
+    />
+
+    <rect
+      x="415"
+      y="195"
+      width="440"
+      height="160"
+      rx="16"
+      fill="url(#panel)"
+      stroke="#272b3a"
+    />
+
+    <rect
+      x="875"
+      y="195"
+      width="280"
+      height="160"
+      rx="16"
+      fill="url(#panel)"
+      stroke="#272b3a"
+    />
+
+    <!-- =========================================================
+         CARD 1
+         ========================================================= -->
+
+    <text
+      x="72"
+      y="228"
+      fill="#c084fc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="14"
+      font-weight="700"
+    >
+      SEASONALBOTS
+    </text>
+
+    <text
+      x="72"
+      y="263"
+      fill="#f8fafc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="26"
+      font-weight="750"
+    >
+      Building better
+    </text>
+
+    <text
+      x="72"
+      y="293"
+      fill="#f8fafc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="26"
+      font-weight="750"
+    >
+      Discord experiences.
+    </text>
+
+    <text
+      x="72"
+      y="326"
+      fill="#94a3b8"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+    >
+      Bots • APIs • Dashboards • Infrastructure
+    </text>
+
+    <!-- =========================================================
+         CARD 2 — PROJECTS
+         ========================================================= -->
+
+    <text
+      x="443"
+      y="228"
+      fill="#f8fafc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="17"
+      font-weight="700"
+    >
+      Our Seasons
+    </text>
+
+    <!-- Halloween -->
+    <circle cx="450" cy="263" r="5" fill="#f97316" />
+
+    <text
+      x="466"
+      y="268"
+      fill="#e2e8f0"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="14"
+      font-weight="600"
+    >
+      HalloweenBot
+    </text>
+
+    <!-- Christmas -->
+    <circle cx="450" cy="294" r="5" fill="#60a5fa" />
+
+    <text
+      x="466"
+      y="299"
+      fill="#e2e8f0"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="14"
+      font-weight="600"
+    >
+      ChristmasBot
+    </text>
+
+    <!-- Easter -->
+    <circle cx="620" cy="263" r="5" fill="#f472b6" />
+
+    <text
+      x="636"
+      y="268"
+      fill="#e2e8f0"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="14"
+      font-weight="600"
+    >
+      EasterBot
+    </text>
+
+    <!-- Shuffle -->
+    <circle cx="620" cy="294" r="5" fill="#a855f7" />
+
+    <text
+      x="636"
+      y="299"
+      fill="#e2e8f0"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="14"
+      font-weight="600"
+    >
+      Shuffle Radio
+    </text>
+
+    <text
+      x="443"
+      y="329"
+      fill="#64748b"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="12"
+    >
+      One platform. Every season.
+    </text>
+
+    <!-- =========================================================
+         CARD 3 — TECH
+         ========================================================= -->
+
+    <text
+      x="902"
+      y="228"
+      fill="#f8fafc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="17"
+      font-weight="700"
+    >
+      Built With
+    </text>
+
+    <text
+      x="902"
+      y="263"
+      fill="#60a5fa"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      TypeScript
+    </text>
+
+    <text
+      x="1000"
+      y="263"
+      fill="#f8fafc"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      Next.js
+    </text>
+
+    <text
+      x="902"
+      y="292"
+      fill="#a78bfa"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      Discord.js
+    </text>
+
+    <text
+      x="1000"
+      y="292"
+      fill="#86efac"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      Fastify
+    </text>
+
+    <text
+      x="902"
+      y="321"
+      fill="#fb923c"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      Bun
+    </text>
+
+    <text
+      x="1000"
+      y="321"
+      fill="#94a3b8"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="13"
+      font-weight="600"
+    >
+      Prisma
+    </text>
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <circle
+      cx="66"
+      cy="388"
+      r="6"
+      fill="#8b5cf6"
+      filter="url(#glow)"
+    />
+
+    <text
+      x="85"
+      y="393"
+      fill="#64748b"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="11"
+      font-weight="600"
+      letter-spacing="2.3"
+    >
+      BUILDING SEASONAL DISCORD EXPERIENCES TOGETHER
+    </text>
+
+    <text
+      x="1000"
+      y="393"
+      fill="#8b5cf6"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      SEASONALBOTS
+    </text>
+
+    <line
+      x1="1100"
+      y1="389"
+      x2="1125"
+      y2="389"
+      stroke="#475569"
+    />
+
+    <text
+      x="1138"
+      y="393"
+      fill="#64748b"
+      font-family="Inter,Segoe UI,Arial,sans-serif"
+      font-size="10"
+      letter-spacing="1"
+    >
+      2026
+    </text>
+  </g>
+
+  <!-- Border -->
+  <rect
+    x=".5"
+    y=".5"
+    width="1199"
+    height="419"
+    rx="27.5"
+    fill="none"
+    stroke="#24283a"
+  />
+</svg>
