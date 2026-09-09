@@ -1,0 +1,64 @@
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
+
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - master
+      - main
+      - develop
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: "Profile Metrics"
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Organization
+          user: SeasonalBots
+
+          # Template
+          template: classic
+
+          # Base metrics
+          base: header, activity, community, repositories, metadata
+
+          # Configuration
+          config_timezone: Europe/London
+
+          # Calendar
+          plugin_isocalendar: no
+          plugin_isocalendar_duration: full-year
+
+          # Languages
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7.5
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+
+          # Notable contributions
+          plugin_notable: no
+          plugin_notable_from: organization
+          plugin_notable_types: commit
