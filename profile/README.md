@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="./assets/seasonalbots.svg"
+    src="https://seasonalbots.com/brand/banner-social.png"
     alt="SeasonalBots"
     width="100%"
   />
